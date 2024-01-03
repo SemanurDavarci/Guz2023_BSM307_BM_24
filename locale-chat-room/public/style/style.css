@@ -1,0 +1,110 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./../assets/amasra.jpg");
+}
+
+#container {
+  width: 50rem;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-image: url("./../assets/background.png");
+  background-repeat:no-repeat;
+}
+
+#container nav {
+  background-color: #eb6e15 !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+#container nav h1 {
+  font-size: 4rem;
+  font-style: italic;
+}
+
+#container #message-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 50rem;
+  max-height: 70%;
+  overflow: auto;
+}
+
+#container #message-list .message-item {
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 70%;
+}
+
+#container #message-list .message-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#container #message-list .message-item p {
+  font-size: 1.6rem;
+}
+
+#container #message-list .message-me {
+  align-self: flex-end;
+  background-color: #4caf50;
+  color: white;
+}
+
+#container #message-list .message-others {
+  align-self: flex-start;
+  background-color: #ddd;
+}
+
+#container form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+input,
+button {
+  padding: 1rem;
+  border: 0.1rem solid #ddd;
+  outline: none;
+  border-radius: 1rem;
+}
+
+input:read-only {
+  background-color: #ddd;
+  /* color: white; */
+}
+
+button {
+  background-color: #3d30cb;
+  color: white;
+  border: 0.1rem solid #1d1977;
+}
+
+button:hover {
+  background-color: #1818a1;
+}

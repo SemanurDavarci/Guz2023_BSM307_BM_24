@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basit Mesajlaşma</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <h1>Barü Chat</h1>
+      </nav>
+
+      <div id="message-list"></div>
+
+      <form>
+        <input type="text" id="username" placeholder="Kullanıcı adı" required />
+        <input
+          type="text"
+          id="message"
+          placeholder="Mesajınızı girin"
+          required
+        />
+        <button type="submit" id="send-btn">Gönder</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

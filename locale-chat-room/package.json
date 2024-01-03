@@ -1,0 +1,14 @@
+{
+  "name": "locale-chat-room",
+  "version": "1.0.0",
+  "description": "Locale Chat Room",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "dev": "node --watch --trace-warnings index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
